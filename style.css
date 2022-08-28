@@ -1,0 +1,303 @@
+
+body {
+    direction: rtl;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5c5a57 ;
+}
+
+
+ .logo {
+    flex: 1;
+    display: block;
+    font-size:30px;
+    background-image: url(images/bread3.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    text-shadow: lavenderblush;
+    text-shadow: 2px 2px black;
+    border-radius: 12%;
+    border:4px solid rgb(215, 215, 15);
+ } 
+
+
+.callnaw {
+    background-size: 100%;
+    width: 100px;
+    height: 100px;
+    margin-top: 130px;
+    position: fixed;
+    border: 1px solid black;
+}
+
+.contact-pic {
+    width: 100px;
+    height: 100px;
+}
+
+.main-container {
+    width:90%;
+    margin:auto;
+}
+
+.header {
+    height:130px;
+    background-image: url(images/bread2.png);
+    background-position: center;
+    background-size: cover;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20x;
+}
+
+.img1-box {
+    flex: 1;
+}
+
+.img1 {
+    height: 300px;
+    
+}
+
+ .top-article {
+    line-height: 30px;
+} 
+
+                    /*  עיצוב התפריט  הראשי */
+   .header a { 
+        padding-top: 50px;
+        text-decoration: none;
+        font-size: 20px;
+        display: block;
+        color: black;
+        height: 100px;
+    }         
+    
+    a:hover {
+        color:peru;
+    }
+
+
+ .bar1 {
+    flex: 1;
+    text-align: center;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px snow;
+}
+
+.bar2 {
+    flex: 1;
+    text-align: center;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px snow;
+}
+
+.bar3 {
+    flex: 1; 
+    text-align: center;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px snow;
+} 
+
+.bar4 {
+    flex: 1;
+    text-align: center;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px snow;
+}
+
+.bar5 {
+    flex: 1;
+    text-align: center;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px snow; 
+}
+
+.bar6 {
+   
+    flex: 1;
+    text-align: center;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px snow;
+
+}
+
+/* אזור תוכן עליון (הלחמים שלנו) */
+.main {
+    margin-top: 55px;
+    padding: 55px;
+    background-size: cover;
+    display: flex;
+    
+}
+
+
+
+.article {
+    flex: 1;
+    text-align: center;
+    padding-left: 30px;
+}
+
+
+    
+/* תצוגת התמונות ותוכן קצר לכל תמונה  */
+.box-img {
+    background-color: white;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    margin: 25px;
+    flex: 1;
+    flex-wrap: wrap;
+    border-radius: 4%;
+    justify-content: space-between;
+}
+
+  /* דיב פנימי של תצוגת התמונות */
+ .box-internal {
+    padding: 6px;
+    width: 200px;
+    margin: auto;
+ }
+
+.box-img img {
+    height: 150px;
+    width: 170px;
+    
+
+}
+   /* תמונת רקע של תצודת התמונות */
+.middle-container {
+    background-image: url("images/knife-2879372_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+           
+    /* footer */
+
+.footer {
+        width: 100%;
+        background-color: gray;
+        color: azure;
+        text-align: center;
+        margin-top: 100px;
+    
+    }
+
+    .footer a{
+        display: inline-block;
+        text-decoration: none;
+        color: azure;
+        padding: 40px;
+        flex-wrap: wrap;
+    }
+
+    .footer-links {
+        width: 100%;
+       
+    }
+
+    .adress {
+        flex: 1;
+    }
+
+
+     /* form */
+    .form {
+        flex: 1;
+        padding-right: 50px;
+    }
+
+    
+
+    /* media */
+
+@media (max-width:800px) {
+
+    .logo {
+        display: none;
+    }
+
+    .header a {
+        height: 21px;
+        padding: 0;
+    }
+
+    .img1 {
+       width: 100%;
+       color: blue;
+    }
+
+    .header {
+        flex-direction: column;
+        color: blue;
+        background-color: bisque;
+        background-image: none;
+    }
+
+
+    .main{
+        flex-direction: column;
+        color: blue;
+        
+    }
+
+    .box-img {
+        flex-direction: column;
+       
+    }
+
+    .middle-container{
+        width: 600px;
+        color: blue;
+        background-image: none;
+        
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+}
+ 
+
+
+@media (max-width:1050px) {
+    .main{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo  {
+        display: none;
+    }
+
+    .header{
+        flex-direction: column;
+        color: brown;
+    }
+
+    .main {
+        flex-direction: column;
+        color: brown;
+    }
+
+    .box-img {
+        flex-direction: column;
+      
+        color: brown;
+        
+    }
+
+    .middle-container {
+        width:30%;
+    }
+
+}
+ 
